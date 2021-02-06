@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:food_decider/file_utils.dart';
 import 'package:food_decider/main_container.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await setupApp();
   runApp(MyApp());
 }
 
